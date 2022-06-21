@@ -1,0 +1,16 @@
+<h1>Roles</h1>
+
+<table>
+  <thead>
+    <th>Role</th>
+  </thead>
+
+  <tbody>
+    <% @roles .each do |r|   %>
+    <tr>
+      <td><%= r.roll %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table><br>
+<%= link_to "Add New Roles", new_role_path, :class => "link" %>
