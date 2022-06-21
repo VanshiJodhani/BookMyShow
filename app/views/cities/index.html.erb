@@ -1,0 +1,16 @@
+<h1>City</h1>
+
+<table>
+  <thead>
+    <th>City</th>
+  </thead>
+
+  <tbody>
+    <% @cities .each do |c|   %>
+    <tr>
+      <td><%= c.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table><br>
+<%= link_to "Add New City", new_city_path, :class => "link" %>
