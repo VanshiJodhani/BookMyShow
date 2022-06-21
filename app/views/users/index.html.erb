@@ -1,0 +1,27 @@
+<h1>Users</h1>
+
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Phone Number</th>
+    <th>E-mail</th>
+    <th>Booking</th>  
+    <th>Edit</th>
+    <th>Update</th>  
+  </thead>
+  <tbody>
+    <% @users .each do |u|   %>
+    <tr>
+      <td><%= u.name %></td>
+      <td><%= u.phone %></td>
+      <td><%= u.email %></td>
+      <td><%= link_to "Booking", new_user_booking_path(u) %></td>
+      <td><%= link_to "Edit User", edit_user_path(u) %></td>
+      <td><%= link_to "Destroy", user_path(u), data: {
+        turbo_method: :delete,
+        turbo_confirm: "Are you sure?"} %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table><br>
+<%= link_to "Add New User", new_user_path, :class => "link" %>
