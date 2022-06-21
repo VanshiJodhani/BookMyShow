@@ -1,0 +1,51 @@
+table,th, td{
+  border: ridge  black 1px;
+  width: 40%;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(184, 232, 150);
+}
+body{
+  background-color: gainsboro;
+}
+.error{
+  color: red;
+}
+th{
+  background-color: lightpink;
+}
+h1{
+  text-align: center;
+  background-color: rgb(196, 124, 190);
+  padding: 20px;
+  font-style: italic;
+  font-size: 50px;
+}
+li{
+  font-size: 28px;
+  padding: 30px;
+  list-style-type: square;
+}
+.form{
+  background-color: rgb(159, 172, 217);
+  padding: 50px;
+  width: 20%;
+  margin-left: 35%;
+  line-height: 30px;
+  font-size: 25px;
+}
+.link{
+  font-size: 30px;
+}
+.button{
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 17px;
+}
+select{
+  width: 140px;
+  height: 25px;
+  font-size: 20px;
+}
