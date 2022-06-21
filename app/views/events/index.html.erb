@@ -1,0 +1,24 @@
+<h1>Event</h1>
+
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Start time</th>
+    <th>End time</th>
+    <th>Location</th>
+    <th>Category</th>
+  </thead>
+
+  <tbody>
+    <% @events .each do |e|   %>
+    <tr>
+      <td><%= e.name %></td>
+      <td><%= e.start_time %></td>
+      <td><%= e.end_time %></td>
+      <td><%= e.location.name %></td>
+      <td><%= e.category.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table><br>
+<%= link_to "Add New Event", new_event_path, :class => "link" %>
